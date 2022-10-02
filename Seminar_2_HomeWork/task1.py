@@ -7,23 +7,23 @@
 
 
                                 #           ВАРИАНТ 1
-# import os
-# os.system('cls')
+import os
+os.system('cls')
 
-# s = input("Enter your number: ")
-# number = sum(int(i) for i in str(s) if i.isdigit())
-# print(number)
+s = input("Enter your number: ")
+number = sum(int(i) for i in str(s) if i.isdigit())
+print(number)
 
 
                                 #           ВАРИАНТ 2
 
-import os
-os.system('cls')
+# import os
+# os.system('cls')
 
-number = input('Введите число = ')
-sum = 0
-for item in number:
-    if item.isdigit():
-        # print(item)
-        sum += int(item)
-print(sum)    
+# number = input('Введите число = ')
+# sum = 0
+# for item in number:
+#     if item.isdigit():
+#         # print(item)
+#         sum += int(item)
+# print(sum)    
