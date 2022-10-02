@@ -11,3 +11,4 @@ def sequence(n):
         
 print(sequence(n))
 print(round(sum(sequence(n))))
+

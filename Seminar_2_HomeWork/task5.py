@@ -2,28 +2,28 @@
 
 # import random
 
+import os
+os.system('cls')
 
-# import os
-# os.system('cls')
+from random import Random, randint
 
-# from random import Random, randint
+N = int(input('Введите количество элементов списка: '))
+numbers = []
+for i in range(N):
+    numbers.append(randint(-N,N+1))
+print(numbers, '<- Original list')
 
-# N = int(input('Введите количество элементов списка: '))
-# numbers = []
-# for i in range(N):
-#     numbers.append(randint(-N,N+1))
-# print(numbers)
+def mixed(numbers):
+    list = numbers[:]
+    numbers_length = len(list)
+    for i in range(numbers_length):
+        index = randint(0, numbers_length - 1)
+        temp = list[i]
+        list[i] = list[index]
+        list[index] = temp
+    return list
+print(mixed(numbers), '<- Mixed list')
 
-# def mixed(numbers):
-#     list = numbers[:]
-#     numbers_length = len(list)
-#     for i in range(numbers_length):
-#         index = randint(0, numbers_length - 1)
-#         temp = list[i]
-#         list[i] = list[index]
-#         list[index] = temp
-#     return list
-# print(mixed(numbers))
 
 
 # import os
@@ -54,7 +54,7 @@
 # import random
 
 # # initializing list
-# test_list = [1, 4, 5, 6, 3]
+# test_list = [1, 4, 5, 6, 3, 7]
 
 # # Printing original list
 # print ("The original list is : " + str(test_list))
@@ -68,19 +68,19 @@
 
 
 
-import random
 
+# import random
 
-lenght = 4
-list = [i for i in range (lenght)]
+# lenght = 5
+# list = [i for i in range (lenght)]
 
-print(list, '<-- original')
+# print(list, '<-- original')
 
-for i in range(len(list)):
-    r = random.randint(i,lenght-1)
-    m = list[i]
-    list[i] = list[r]
-    list[r] = m
+# for i in range(len(list)):
+#     r = random.randint(i,lenght-1)
+#     m = list[i]
+#     list[i] = list[r]
+#     list[r] = m
 
-random.shuffle(list)
-print(list, '<-- shuffle')
+# random.shuffle(list)
+# print(list, '<-- shuffle')
