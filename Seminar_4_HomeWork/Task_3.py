@@ -17,12 +17,19 @@ def get_unique_numbers(numbers):
     return list_of_unique_numbers
 
 print(get_unique_numbers(numbers))
-
+# 
 
 
 # numbers = [1, 2, 2, 3, 3, 4, 5]
 # numbers = input('Введите числа через пробел: ').split()
 # unique_numbers = list(set(numbers))
 # print(unique_numbers)
+
+
+
+enum_number = list(map(int, input('enter numbers: ').split()))
+enum_unique = list(filter(lambda item: enum_number.count(item) == 1, enum_number))
+print(enum_number, '->', enum_unique)
+
 
 

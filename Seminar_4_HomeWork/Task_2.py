@@ -22,8 +22,6 @@ os.system('cls')
 # print()
 
 
-
-
 def InputNumbers(inputText):
     is_OK = False
     while not is_OK:
@@ -36,13 +34,13 @@ def InputNumbers(inputText):
 
 
 def func_search(num):
-    rezult = []
+    result = []
 
     for i in range(2, num):
         while num % i == 0:
             num /= i
-            rezult.append(i)
-    return rezult
+            result.append(i)
+    return result
 
 
 num = InputNumbers("Введите натуральное число N: ")
@@ -51,27 +49,22 @@ num = InputNumbers("Введите натуральное число N: ")
 print(f"Список простых множителей числа '{num}': {func_search(num)}")
 
 
-
-
 # import math
 # def primefactors(n):
 #    #even number divisible
 #    while n % 2 == 0:
 #       print (2),
 #       n = n / 2
-   
+
 #    #n became odd
 #    for i in range(3,int(math.sqrt(n))+1,2):
-    
+
 #       while (n % i == 0):
 #          print (i)
 #          n = n / i
-   
+
 #    if n > 2:
 #       print (n)
 
 # n = int(input("Enter the number for calculating the prime factors :\n"))
 # primefactors(n)
-
-
-
