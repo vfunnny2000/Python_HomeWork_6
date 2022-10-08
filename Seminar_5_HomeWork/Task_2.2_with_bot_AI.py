@@ -1,4 +1,7 @@
-   
+
+import os
+os.system('cls')
+
     
 from random import randint, choice
 
@@ -74,4 +77,4 @@ winer = play_game(rules, players, messages)
 if not winer:
     print("У нас нет победителя.")
 else:
-    print(f"Поздравляю! Победил {winer}!  Все конфеты ему!")
+    print(f"Поздравляю! Победил {winer}!")
