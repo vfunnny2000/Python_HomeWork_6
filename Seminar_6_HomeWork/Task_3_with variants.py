@@ -25,8 +25,8 @@ print(get_unique_numbers(numbers))
 # unique_numbers = list(set(numbers))
 # print(unique_numbers)
 
+# ************   С Т А Л О    **********
 
-
-enum_number = list(map(int, input('enter numbers: ').split()))
-enum_unique = list(filter(lambda item: enum_number.count(item) == 1, enum_number))
-print(enum_number, '->', enum_unique)
+unique_number = list(map(int, input('enter numbers: ').split()))
+unique_unique = list(filter(lambda item: unique_number.count(item) == 1, unique_number))
+print(unique_number, '->', unique_unique)
