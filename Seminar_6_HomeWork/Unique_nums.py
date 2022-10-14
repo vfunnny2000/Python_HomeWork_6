@@ -6,8 +6,10 @@
 
 a = [1, 2, 3, 5, 1, 5, 3, 10]
 
-# res = list(filter(lambda x: a.count(x)==1, a))
+print(a)
 
-res = [x for x in a if a.count(x)==1]
+res = list(filter(lambda x: a.count(x)==1, a))
+
+# res = [x for x in a if a.count(x)==1]
 
 print(res)
