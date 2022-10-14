@@ -5,6 +5,22 @@ import os
 os.system('cls')
 
 
+# *******   НОВЫЙ ВАРИАНТ к ДЗ 6    ******
+def factors(num, d=2):
+    while num > 1:
+        n1, n2 = divmod(num, d)
+        if n2:
+            d += 1
+        else:
+            yield d
+            num = n1
+
+n = int(input("Integer: "))
+print('{} = {}' .format(n, ' * '.join(map(str, factors(n)))))
+
+
+
+# ****************************************
 # n = int(input('Enter your number: '))
 # while n > 1:
 #     i = 2
@@ -21,6 +37,7 @@ os.system('cls')
 #         continue
 # print()
 
+# *********************************
 
 # def InputNumbers(inputText):
 #     is_OK = False
@@ -44,10 +61,10 @@ os.system('cls')
 
 
 # num = InputNumbers("Введите натуральное число N: ")
-
-
 # print(f"Список простых множителей числа '{num}': {func_search(num)}")
 
+
+# **********************************
 
 # import math
 # def primefactors(n):
@@ -71,26 +88,5 @@ os.system('cls')
 
 
 
-# def factors(num, d=2):
-#     while num > 1:
-#         n1, n2 = divmod(num, d)
-#         if n2:
-#             d += 1
-#         else:
-#             yield d
-#             num = n1
 
 
-
-# *******   НОВЫЙ ВАРИАНТ к ДЗ 6    ******
-def factors(num, d=2):
-    while num > 1:
-        n1, n2 = divmod(num, d)
-        if n2:
-            d += 1
-        else:
-            yield d
-            num = n1
-
-n = int(input("Integer: "))
-print('{} = {}' .format(n, ' * '.join(map(str, factors(n)))))
