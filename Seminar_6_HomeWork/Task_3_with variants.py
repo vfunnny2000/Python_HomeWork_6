@@ -4,7 +4,7 @@
 import os
 os.system('cls')
 
-************   С Т А Л О    **********
+# ************   С Т А Л О    **********
 
 # unique_number = list(map(int, input('enter numbers: ').split()))
 # unique_unique = list(filter(lambda item: unique_number.count(item) == 1, unique_number))
