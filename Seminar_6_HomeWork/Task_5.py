@@ -6,6 +6,17 @@
 # - 3 -> 11
 # - 2 -> 10
 
+#************    Вот такой односторчный вариант получился   *******
+    
+import os
+os.system('cls')
+
+print(f'{int(input()):b}')
+
+
+
+
+
 # import os
 # os.system('cls')
 
@@ -21,9 +32,3 @@
 
 
 
-# Вот такой односторчный вариант получился:
-    
-import os
-os.system('cls')
-
-print(f'{int(input()):b}')
